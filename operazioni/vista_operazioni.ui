@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="bgwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#bgwidget{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(253, 153, 8, 255), stop:1 rgba(255, 255, 255, 255));
+
+}</string>
+   </property>
+   <widget class="QLabel" name="image">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-200</x>
+      <y>-270</y>
+      <width>1800</width>
+      <height>1300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:50%;
+image: url(:/images/1.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>60</y>
+      <width>501</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bangla MN</family>
+      <pointsize>36</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 36pt;
+background: transparent;
+color: rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>Elenco delle operazioni</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancella">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>400</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(16, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string>Cancella</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="carica">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(16, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string>Carica</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEsci">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>490</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(16, 128, 128);</string>
+    </property>
+    <property name="text">
+     <string>Esci</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>210</y>
+      <width>805</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(255,255,255);
+</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>210</y>
+      <width>311</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::ListMode</enum>
+    </property>
+    <property name="batchSize">
+     <number>100</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>ore di lavoro dei dipendenti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>entrate annuali</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>canoni di manutenzione</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>numero defunti negli anni</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>età media dei defunti</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>numero di allacci</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>numero di distacchi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>numero totale di allacci e di distacchi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>defunti senza incaricato</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>numero di manutenzioni</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>entrate annuali dai soli servizi aggiuntivi</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>clienti che devono pagare una fattura</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>defunti che sono stati riallacciati</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>entrate totali</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
